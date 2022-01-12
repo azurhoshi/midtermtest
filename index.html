@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MidTerm</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    
+  </head>
+  <body>
+    <div class="container">
+
+        <h1>Minterm Test</h1>
+
+        <div class="row">
+            <div class="col">
+                <h2>About Me</h1>
+                <p>Yummy peanut buttery goodness!</p>
+            </div>
+            <div class="col">
+                <img class="img-fluid" src="img/test1.png" name="pic" id="pic" onclick="swap()"/>
+                <!-- <img class="img-fluid" src="img/test1.png" /> -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h2>Classes</h1>
+                    <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col">Course Number</th>
+                            <th scope="col">Course Title</th>
+                            <th scope="col">Semester Taken</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td colspan="3">Spring 2016</td>
+                          </tr>
+                          <tr>
+                            <th colspan="3" class="text-center">For Credit</th>
+                          </tr>
+                          <tr>
+                            <td class="text-primary">6.813</td>
+                            <td>User Interface Design</td>
+                            <td>Spring 2014</td>
+                          </tr>
+                          <tr>
+                            <th colspan="3" class="text-center">Listener</th>
+                          </tr>
+                          <tr class="text-primary">
+                            <td >6.034</td>
+                            <td>Artificial Intelligence</td>
+                            <td>Spring 2015</td>
+                          </tr>
+                          <tr class="table-active">
+                            <td class="text-primary">6.006</td>
+                            <td>Introduction to Algorithms</td>
+                            <td>Fall 2014</td>
+                          </tr>
+                        </tbody>
+                      </table>
+            </div>
+            <div class="col">
+                <h2>Extracurriculars</h1>
+                <ul>
+                    <li>Asian Dance Team</li>
+                    <li>DanceTroupe</li>
+                    <li>MiT Poker Club</li>
+                    </ul>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h2>Contact</h1>
+            <div class="row">
+                <div class="input-group ">
+                    <div class="col-sm-1">
+                        <h5>Email:</h5>
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+                    </div>
+                </div>
+            </div>
+            <h5>Message</h5>
+            <div class="input-group">
+                <input type="text" class="form-control" aria-label="Message" aria-describedby="basic-addon1">
+            </div>
+            <button type="button" class="btn button1">Submit</button>
+
+        </div>
+    </div>
+        </script>
+        <script type="text/javascript">
+            function swap(){
+                if (document.getElementById("pic").src.endsWith('img/test1.png') == true)  //Comparison
+                { 
+                     document.getElementById("pic").src = "img/test2.png"; //assignment  
+    
+                 } 
+                 else if (document.getElementById("pic").src.endsWith('img/test2.png') == true) 
+                 { 
+                    document.getElementById("pic").src = "img/test1.png"; 
+                    
+                }
+            }
+        </script>
+
+  </body>
+</html>
